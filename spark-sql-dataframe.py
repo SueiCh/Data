@@ -11,7 +11,7 @@ people.printSchema()
 print("Let's display the name column:")
 people.select("name").show()
 
-print("Filter out anyone over 21:")
+print("Filter out anyone under 21:")
 people.filter(people.age < 21).show()
 
 print("Group by age")
