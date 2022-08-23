@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("SparkSQL").getOrCreate()
 
 people = spark.read.option("header", "true").option("inferSchema", "true")\
-    .csv("file:hdfs:///user/raj_ops/pruebaSpark/fakefriends-header.csv")
+    .csv("file:hdfs:///user/raj_ops/prueba2/fakefriends-header.csv")
     
 print("Here is our inferred schema:")
 people.printSchema()
